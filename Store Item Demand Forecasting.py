@@ -21,8 +21,8 @@ warnings.filterwarnings('ignore')
 
 ################################### Load Dataset ####################################################
 
-train = pd.read_csv(r'C:\Users\Oguz\Desktop\DCMLBC06\HAFTA09\dataset\train.csv', parse_dates=['date'])
-test = pd.read_csv(r'C:\Users\Oguz\Desktop\DCMLBC06\HAFTA09\dataset\test.csv', parse_dates=['date'])
+train = pd.read_csv('dataset\train.csv', parse_dates=['date'])
+test = pd.read_csv('dataset\test.csv', parse_dates=['date'])
 df = pd.concat([train, test], sort=False)
 df.head()
 
