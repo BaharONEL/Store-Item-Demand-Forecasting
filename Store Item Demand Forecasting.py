@@ -187,7 +187,7 @@ lgbtrain_all = lgb.Dataset(data=X_train, label=Y_train, feature_name=cols)
 model = lgb.train(lgb_params, lgbtrain_all, num_boost_round=model.best_iteration)
 test_preds = model.predict(X_test, num_iteration=model.best_iteration)
 
-
+#1st Estimates for the store's 1st products
 forecast = pd.DataFrame({"date":test["date"],
                         "store":test["store"],
                         "item":test["item"],
